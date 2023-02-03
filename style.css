@@ -1,0 +1,129 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Brush-Script MT',cursive;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right,skyblue,lightgreen);
+}
+
+.searchcontainer{
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.mealList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+
+.mealItem{
+    background-color: white;
+    width: 400px;
+    height:auto;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 30px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    transition: width 1s,height 2s;
+}
+
+.mealItem:hover{
+    width: 450px;
+    height: auto;
+}
+
+.mealItem img{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 5px 0px 0px rgba(0, 0, 0, 0.7);
+    transition: width 1s,box-shadow 1s;
+}
+
+.mealItem img:hover,.mealInfo img:hover{
+    width: 80%;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.7);
+}
+
+input{
+    font-family: 'Brush-Script MT',cursive;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    height: 35px;
+    width: 300px;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button{
+    cursor: pointer;
+    font-family: 'Brush-Script MT',cursive;
+    width: 200px;
+    height: 40px;
+    background-color: orangered;
+    color: white;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+.region h3,h4{
+    font-size: 1.3rem;
+    background-color:white;
+    border-radius: 30px;
+    color: black;
+    transition:background-color 1s,color 1s;
+}
+
+.region h3:hover,h4:hover{
+    font-size: 1.5rem;
+    background-color:black;
+    color: white;
+}
+
+.mealInfo{
+    background-image: linear-gradient(to bottom,white,skyblue);
+    position: absolute;
+    left: 35%;
+    top: 0;
+    z-index: 1;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    background-color:yellow;
+    padding: 13px;
+    border-radius: 10px;
+}
+.mealInfo img{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 5px 0px 0px rgba(9, 217, 240, 0.7);
+    transition: width 1s,box-shadow 1s;
+}
+
+.description{
+    color:black;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px 5px rgba(7, 209, 231, 0.7);
+    font-size: 1.2rem;
+}
+
+.mealInfocontianer{
+    display: none;
+}
+
+
+
